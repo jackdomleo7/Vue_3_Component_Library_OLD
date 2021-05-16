@@ -72,7 +72,7 @@ export default defineComponent({
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
   .component-library-sample {
     display: block;
     width: 400px;
@@ -81,8 +81,9 @@ export default defineComponent({
     background: #eaeaea;
     text-align: center;
     padding: 25px;
-  }
-  .component-library-sample p {
-    margin: 0 0 1em;
+
+    p {
+      margin: 0 0 1em;
+    }
   }
 </style>
