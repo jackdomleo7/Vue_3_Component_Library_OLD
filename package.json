@@ -18,7 +18,8 @@
   "files": [
     "dist/*",
     "component-library.d.ts",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "src/**/!(*.spec).ts"
   ],
   "sideEffects": false,
   "scripts": {
