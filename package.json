@@ -24,7 +24,7 @@
   "scripts": {
     "prepare": "npm run build",
     "serve": "vue-cli-service serve dev/serve.ts",
-    "build": "cross-env NODE_ENV=production rollup --config rollup.config.js"
+    "build": "rimraf dist && cross-env NODE_ENV=production rollup --config rollup.config.js"
   },
   "devDependencies": {
     "@babel/core": "^7.14.2",
@@ -43,6 +43,7 @@
     "minimist": "^1.2.5",
     "node-sass": "^6.0.0",
     "postcss": "^8.2.15",
+    "rimraf": "^3.0.2",
     "rollup": "^2.48.0",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-scss": "^2.6.1",
