@@ -1,5 +1,8 @@
 # Vue 3 Component Library
 
+[![Pipeline status](https://github.com/jackdomleo7/Vue_3_Component_Library/actions/workflows/pipeline.yml/badge.svg)](https://github.com/jackdomleo7/Vue_3_Component_Library/actions/workflows/pipeline.yml)
+[![CodeFactor](https://www.codefactor.io/repository/github/jackdomleo7/vue_3_component_library/badge)](https://www.codefactor.io/repository/github/jackdomleo7/vue_3_component_library)
+
 `@jackdomleo7/vue3-components`
 
 A Vue 3 component library with [Vue 3](https://v3.vuejs.org), [Rollup](https://rollupjs.org), [Jest](https://jestjs.io), [Storybook](https://storybook.js.org) & [SCSS](https://sass-lang.com).
