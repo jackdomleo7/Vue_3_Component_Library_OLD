@@ -4,7 +4,7 @@
   "description": "A Vue 3 component library with Rollup, Storybook, Jest & SCSS.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jackdomleo7/Vue_3_Component_Library"
+    "url": "git+https://github.com/jackdomleo7/Vue_3_Component_Library.git"
   },
   "author": {
     "name": "Jack Domleo",
@@ -18,13 +18,17 @@
   "files": [
     "dist/*",
     "component-library.d.ts",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "src/**/!(*.spec).ts"
   ],
   "sideEffects": false,
   "scripts": {
     "prepare": "npm run build",
     "serve": "vue-cli-service serve dev/serve.ts",
-    "build": "rimraf dist && cross-env NODE_ENV=production rollup --config rollup.config.js"
+    "build": "rimraf dist && cross-env NODE_ENV=production rollup --config rollup.config.js",
+    "test": "jest",
+    "test:update-snapshots": "jest --updateSnapshot",
+    "test:report": "open-cli report/index.html"
   },
   "devDependencies": {
     "@babel/core": "^7.14.2",
@@ -35,13 +39,22 @@
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-replace": "^2.4.2",
+    "@types/jest": "^26.0.23",
+    "@types/jest-axe": "^3.5.1",
     "@vue/cli-plugin-babel": "^4.5.13",
     "@vue/cli-plugin-typescript": "^4.5.13",
+    "@vue/cli-plugin-unit-jest": "^4.5.13",
     "@vue/cli-service": "^4.5.13",
     "@vue/compiler-sfc": "^3.0.11",
+    "@vue/test-utils": "^2.0.0-rc.6",
+    "babel-jest": "^26.6.3",
     "cross-env": "^7.0.3",
+    "jest": "^26.6.3",
+    "jest-axe": "^4.1.0",
+    "jest-stare": "^2.2.2",
     "minimist": "^1.2.5",
     "node-sass": "^6.0.0",
+    "open-cli": "^6.0.1",
     "postcss": "^8.2.15",
     "rimraf": "^3.0.2",
     "rollup": "^2.48.0",
@@ -49,9 +62,11 @@
     "rollup-plugin-scss": "^2.6.1",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-vue": "^6.0.0",
-    "sass-loader": "^11.1.1",
+    "sass-loader": "^10.1.1",
+    "ts-jest": "^26.5.6",
     "typescript": "^4.2.4",
-    "vue": "^3.0.11"
+    "vue": "^3.0.11",
+    "vue-jest": "^5.0.0-alpha.9"
   },
   "peerDependencies": {
     "vue": "3.x"

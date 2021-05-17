@@ -1,5 +1,8 @@
 # Vue 3 Component Library
 
+[![Pipeline status](https://github.com/jackdomleo7/Vue_3_Component_Library/actions/workflows/pipeline.yml/badge.svg)](https://github.com/jackdomleo7/Vue_3_Component_Library/actions/workflows/pipeline.yml)
+[![CodeFactor](https://www.codefactor.io/repository/github/jackdomleo7/vue_3_component_library/badge)](https://www.codefactor.io/repository/github/jackdomleo7/vue_3_component_library)
+
 `@jackdomleo7/vue3-components`
 
 A Vue 3 component library with [Vue 3](https://v3.vuejs.org), [Rollup](https://rollupjs.org), [Jest](https://jestjs.io), [Storybook](https://storybook.js.org) & [SCSS](https://sass-lang.com).
@@ -28,7 +31,39 @@ Serve the documentation via Storybook.
 $ npm run build
 ```
 
-Build the component library ready for distribution using Rollup. Builds into `./dist/`.
+Builds the component library ready for distribution using Rollup. Builds into `./dist/`.
+
+### `test`
+
+```bash
+$ npm run test
+```
+
+Run the unit tests and generate a coverage report.
+
+### `test -t <ComponentName>.spec.ts`
+
+```bash
+$ npm run test -t <ComponentName>.spec.ts
+```
+
+Run the unit tests for a specific component.
+
+### `test:update-snapshots`
+
+```bash
+$ npm run test:update-snapshots
+```
+
+Run the unit tests, update any snapshots and generate a coverage report.
+
+### `test:report`
+
+```bash
+$ npm run test:report
+```
+
+Open the unit tests report in a browser.
 
 ## Installation 
 

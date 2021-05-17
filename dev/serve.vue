@@ -13,6 +13,6 @@ export default defineComponent({
 
 <template>
   <div id="app">
-    <component-library-sample />
+    <j-sample />
   </div>
 </template>
