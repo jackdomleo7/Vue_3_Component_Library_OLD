@@ -89,26 +89,26 @@ describe('${componentName}.vue', () => {
 Write-Output "Created ./src/components/${componentName}/${componentName}.spec.ts template"
 
 # Create component Storybook file
-New-Item -ItemType "file" -Path ".\src\components\${componentName}\" -Name "${componentName}.stories.ts"
-Add-Content ".\src\components\${componentName}\${componentName}.stories.ts" @"
-import { ${prefixedComponentName} } from '../index'
+# New-Item -ItemType "file" -Path ".\src\components\${componentName}\" -Name "${componentName}.stories.ts"
+# Add-Content ".\src\components\${componentName}\${componentName}.stories.ts" @"
+# import { ${prefixedComponentName} } from '../index'
 
-export default {
-  title: '${componentName}',
-  component: ${prefixedComponentName}
-}
+# export default {
+#   title: '${componentName}',
+#   component: ${prefixedComponentName}
+# }
 
-const Template = (args: Record<string, unknown>) => ({
-  components: { ${prefixedComponentName} },
-  setup() {
-    return { args };
-  },
-  template: '<${prefixedComponentName} v-bind="args" />',
-})
+# const Template = (args: Record<string, unknown>) => ({
+#   components: { ${prefixedComponentName} },
+#   setup() {
+#     return { args };
+#   },
+#   template: '<${prefixedComponentName} v-bind="args" />',
+# })
 
-export const Default = Template.bind({});
-"@
-Write-Output "Created ./src/components/${componentName}/${componentName}.stories.ts template"
+# export const Default = Template.bind({});
+# "@
+# Write-Output "Created ./src/components/${componentName}/${componentName}.stories.ts template"
 
 Invoke-Expression -Command "npm run test:update-snapshots -t ${componentName}.spec.ts"
 Invoke-Expression -Command "npm run lint:fix"
