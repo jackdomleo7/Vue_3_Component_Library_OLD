@@ -1,7 +1,6 @@
-import { DefineComponent, Plugin } from 'vue';
+import { DefineComponent, Plugin } from 'vue'
 
+declare const ComponentLibrary: Exclude<Plugin['install'], undefined>
+export default ComponentLibrary
 
-declare const ComponentLibrary: Exclude<Plugin['install'], undefined>;
-export default ComponentLibrary;
-
-export const JSample: DefineComponent<{}, {}, any>;
+export const JSample: DefineComponent<{}, {}, any>
