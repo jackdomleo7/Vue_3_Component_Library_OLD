@@ -63,6 +63,20 @@ Run the unit tests, update any snapshots and generate a coverage report.
 $ npm run test:report
 ```
 
+### `lint:check`
+
+```bash
+$ npm run lint:check
+```
+
+Warn of any linting errors.
+
+### `lint:fix`
+
+```bash
+$ npm run lint:fix
+```
+
 Open the unit tests report in a browser.
 
 ## Installation 
