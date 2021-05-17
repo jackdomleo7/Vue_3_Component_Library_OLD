@@ -1,5 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Sample.vue matches snapshot when mounted 1`] = `
+<div
+  class="sample"
+>
+  <p>
+    The counter was initialized to 
+    <b>
+      5
+    </b>
+    .
+  </p>
+  <button>
+     Click +1 
+  </button>
+  <button>
+     Click -1 
+  </button>
+  <button>
+     Click +5 
+  </button>
+  <button>
+     Click -5 
+  </button>
+  <button>
+     Reset 
+  </button>
+</div>
+`;
+
+exports[`Sample.vue matches snapshot when shallow mounted 1`] = `
+<div
+  class="sample"
+>
+  <p>
+    The counter was initialized to 
+    <b>
+      5
+    </b>
+    .
+  </p>
+  <button>
+     Click +1 
+  </button>
+  <button>
+     Click -1 
+  </button>
+  <button>
+     Click +5 
+  </button>
+  <button>
+     Click -5 
+  </button>
+  <button>
+     Reset 
+  </button>
+</div>
+`;
+
 exports[`address-block.vue matches snapshot when mounted 1`] = `
 <div
   class="sample"
