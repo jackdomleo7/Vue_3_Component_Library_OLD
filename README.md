@@ -31,7 +31,39 @@ Serve the documentation via Storybook.
 $ npm run build
 ```
 
-Build the component library ready for distribution using Rollup. Builds into `./dist/`.
+Builds the component library ready for distribution using Rollup. Builds into `./dist/`.
+
+### `test`
+
+```bash
+$ npm run test
+```
+
+Run the unit tests and generate a coverage report.
+
+### `test -t <ComponentName>.spec.ts`
+
+```bash
+$ npm run test -t <ComponentName>.spec.ts
+```
+
+Run the unit tests for a specific component.
+
+### `test:update-snapshots`
+
+```bash
+$ npm run test:update-snapshots
+```
+
+Run the unit tests, update any snapshots and generate a coverage report.
+
+### `test:report`
+
+```bash
+$ npm run test:report
+```
+
+Open the unit tests report in a browser.
 
 ## Installation 
 
