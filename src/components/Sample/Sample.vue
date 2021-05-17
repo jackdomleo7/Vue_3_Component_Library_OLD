@@ -1,5 +1,5 @@
 <template>
-  <div class="component-library-sample">
+  <div class="sample">
     <p>The counter was {{ changedBy }} to <b>{{ counter }}</b>.</p>
     <button @click="increment">
       Click +1
@@ -31,7 +31,7 @@ interface SampleData {
   };
 }
 
-export default defineComponent({
+export default /* #__PURE__ */defineComponent({
   name: 'Sample', // vue component name
   data(): SampleData {
     return {
@@ -73,7 +73,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-  .component-library-sample {
+  .sample {
     display: block;
     width: 400px;
     margin: 25px auto;
