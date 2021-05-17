@@ -1,7 +1,7 @@
 import { mount, shallowMount } from '@vue/test-utils'
 import { JSample } from '@/components'
 
-describe('address-block.vue', () => {
+describe('Sample.vue', () => {
   /**
    * Vue Instance
    */
