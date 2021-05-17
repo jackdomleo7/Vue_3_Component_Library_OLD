@@ -26,7 +26,8 @@
     "prepare": "npm run build",
     "serve": "vue-cli-service serve dev/serve.ts",
     "build": "rimraf dist && cross-env NODE_ENV=production rollup --config rollup.config.js",
-    "test": "jest"
+    "test": "jest",
+    "test:update-snapshots": "jest --updateSnapshot"
   },
   "devDependencies": {
     "@babel/core": "^7.14.2",
