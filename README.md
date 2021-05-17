@@ -63,6 +63,8 @@ Run the unit tests, update any snapshots and generate a coverage report.
 $ npm run test:report
 ```
 
+Open the unit tests report in a browser.
+
 ### `lint:check`
 
 ```bash
@@ -77,7 +79,22 @@ Warn of any linting errors.
 $ npm run lint:fix
 ```
 
-Open the unit tests report in a browser.
+Fix as many linting errors as possible and warn of others.
+
+### `new-component <NewComponent>`
+
+```bash
+$ npm run new-component <NewComponent>
+```
+
+A helper script when creating a new component. It accepts exactly 1 argument as the component name in PascalCase and will:
+- Add component to type definitions
+- Add to components import/export file
+- Create a component directory within `components/`
+- Create component `.vue` file
+- Create component `.spec.ts` file
+- Create component `.stories.ts` file
+- And more
 
 ## Installation 
 
