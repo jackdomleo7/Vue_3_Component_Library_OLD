@@ -27,7 +27,8 @@
     "serve": "vue-cli-service serve dev/serve.ts",
     "build": "rimraf dist && cross-env NODE_ENV=production rollup --config rollup.config.js",
     "test": "jest",
-    "test:update-snapshots": "jest --updateSnapshot"
+    "test:update-snapshots": "jest --updateSnapshot",
+    "test:report": "open-cli report/index.html"
   },
   "devDependencies": {
     "@babel/core": "^7.14.2",
@@ -50,8 +51,10 @@
     "cross-env": "^7.0.3",
     "jest": "^26.6.3",
     "jest-axe": "^4.1.0",
+    "jest-stare": "^2.2.2",
     "minimist": "^1.2.5",
     "node-sass": "^6.0.0",
+    "open-cli": "^6.0.1",
     "postcss": "^8.2.15",
     "rimraf": "^3.0.2",
     "rollup": "^2.48.0",

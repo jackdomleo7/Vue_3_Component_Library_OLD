@@ -32,5 +32,18 @@
       "lines": 10,
       "statements": 10
     }
-  }
+  },
+  "reporters": [
+    "default",
+    [
+      "jest-stare",
+      {
+        "resultDir": "report",
+        "reportTitle": "@jackdomleo7/vue3-components unit tests report",
+        "coverageLink": "./coverage/lcov-report/index.html",
+        "jestStareConfigJson": "jest-stare.json",
+        "jestGlobalConfigJson": "globalStuff.json"
+      }
+    ]
+  ]
 }
