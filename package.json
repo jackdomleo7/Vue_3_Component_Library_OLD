@@ -32,8 +32,7 @@
     "test:report": "open-cli report/index.html",
     "lint:check": "eslint --ext .ts,.js,.vue --ignore-path .eslintignore .",
     "lint:fix": "eslint --ext .ts,.js,.vue --fix --ignore-path .eslintignore .",
-    "new-component": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./newComponent.ps1",
-    "build-storybook": "build-storybook"
+    "new-component": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./newComponent.ps1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.2",
