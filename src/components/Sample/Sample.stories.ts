@@ -1,16 +1,16 @@
-import { JSample } from '../index'; // TODO: Get alias @ working
+import { JSample } from '../index' // TODO: Get alias @ working
 
 export default {
   title: 'Sample',
   component: JSample
-};
+}
 
 const Template = (args: Record<string, unknown>) => ({
   components: { JSample },
-  setup() {
-    return { args };
+  setup () {
+    return { args }
   },
-  template: '<j-sample v-bind="args" />',
-});
+  template: '<j-sample v-bind="args" />'
+})
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})

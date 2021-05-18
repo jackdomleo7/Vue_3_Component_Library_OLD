@@ -59,8 +59,8 @@
 </template>
 
 <script>
-import './page.css';
-import MyHeader from './Header.vue';
+import './page.css'
+import MyHeader from './Header.vue'
 
 export default {
   name: 'my-page',
@@ -69,10 +69,10 @@ export default {
 
   props: {
     user: {
-      type: Object,
-    },
+      type: Object
+    }
   },
 
-  emits: ['login', 'logout', 'createAccount'],
-};
+  emits: ['login', 'logout', 'createAccount']
+}
 </script>
