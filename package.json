@@ -23,7 +23,7 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "prepare": "npm run build",
+    "prepare": "npm run build && npm run build:docs",
     "serve": "start-storybook -p 6006",
     "serve:static": "npm run build:docs && http-server docs --port 6007 -a localhost",
     "build": "rimraf dist && cross-env NODE_ENV=production rollup --config rollup.config.js",
